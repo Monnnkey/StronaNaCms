@@ -27,8 +27,6 @@
                 przedmiot</button>
         </div>
 
-        <!-- FIXED: aria-labelledby wymaga role="dialog" lub innej — Bootstrap modal już to robi przez JS,
-             ale aby HTML był poprawny statycznie dodajemy role="dialog" -->
         <div class="modal fade" id="newItem" tabindex="-1" role="dialog" aria-labelledby="newItemLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -40,7 +38,6 @@
                     <div class="modal-body">
                         <form>
                             <div class="mb-3" style="text-align: left;">
-                                <!-- FIXED: unikalne ID dla każdego inputa -->
                                 <label for="item-name" class="col-form-label">Nazwa przedmiotu:</label>
                                 <input type="text" class="form-control" id="item-name" name="item-name">
                             </div>
@@ -63,7 +60,6 @@
             </div>
         </div>
 
-        <!-- FIXED: role="dialog" dodane do modala usuwania -->
         <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="deleteLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -80,7 +76,6 @@
             </div>
         </div>
 
-        <!-- FIXED: h3 zamiast h1 wewnątrz article, żeby nie pomijać poziomów nagłówków (h2 → h3) -->
         <div class="items-grid management-grid">
 
             <article class="itemBox itemBox-management">
